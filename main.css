@@ -84,6 +84,11 @@ body {
   flex-direction: column;
   gap: 3rem;
 }
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 
 .tool {
   background: white;
