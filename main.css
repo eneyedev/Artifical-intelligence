@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+}
+
+.h3 {
+  color: var(--very-dark-blue);
+  font-size: 25px;
+  margin-bottom: 0.5rem;
+}
+
+.p1 {
+  color: var(--grayish-blue);
+  width: 80%;
+}
+
+.cyan {
+  border-top: 5px solid var(--cyan);
+}
+
+.red {
+  border-top: 5px solid var(--red);
+}
+
+.orange {
+  border-top: 5px solid var(--orange);
+}
+
+.blue {
+  border-top: 5px solid var(--blue);
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.h-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.h-text span:nth-child(1) {
+  color: var(--grayish-blue);
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.h-text span:nth-child(2) {
+  color: var(--very-dark-blue);
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+.page-info {
+  color: var(--grayish-blue);
+  font-size: 20px;
+}
+
+.tools-section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.tool {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 1rem 1rem 0 var(--grayish-blue);
+}
+
+.tool-img {
+  margin-top: 2rem;
+}
+
+.tool-img ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 660px) {
+  .tool {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tools-section {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .tools-section .cyan,
+  .tools-section .blue {
+    width: 30%;
+  }
+
+  .middle {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .middle .tool {
+    width: 70%;
+  }
+}
